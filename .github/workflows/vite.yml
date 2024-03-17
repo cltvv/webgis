@@ -45,11 +45,14 @@ jobs:
           npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with: 
+          base_path: './frontend/'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        
         with:
           # Upload dist folder
-          path: './frontend/dist/'
+          path: './frontend/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
