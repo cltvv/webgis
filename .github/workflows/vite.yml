@@ -50,7 +50,7 @@ jobs:
         
         with:
           # Upload dist folder
-          path: './frontend/dist/assets/'
+          path: './frontend/dist/'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
