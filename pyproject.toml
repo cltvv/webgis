@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "worldmap"
+version = "0.1.0"
+description = ""
+authors = ["yulya_konokhova <yulya_konokhova@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0"
+djangorestframework = "^3.14.0"
+ruff = "^0.1.9"
+django-cors-headers = "^4.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
